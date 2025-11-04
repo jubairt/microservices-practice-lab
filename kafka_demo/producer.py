@@ -4,7 +4,7 @@ from kafka import KafkaProducer
 TOPIC_NAME = "orders"
 
 producer = KafkaProducer(
-    bootstrap_servers=f"kafka-20fad464-abdullahjubairt-9bfb.e.aivencloud.com:19397",
+    bootstrap_servers=f"paste id from aiven cloud.com",
     security_protocol="SSL",
     ssl_cafile="ca.pem",
     ssl_certfile="service.cert",
