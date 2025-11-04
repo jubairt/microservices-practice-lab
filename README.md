@@ -25,12 +25,6 @@ Focus: REST fundamentals, routing, and response modeling.
 
 ---
 
-### 🔐 `crud_microservice`
-A practical microservice performing **CRUD operations** using **FastAPI + SQLAlchemy + SQLite**.  
-Includes JWT authentication and structured logging.
-
----
-
 ### ⚙️ `grpc_request_demo`
 Exploration of **gRPC** for high-performance, low-latency communication between services.  
 Focus: Protocol Buffers, gRPC server & client setup.
@@ -89,14 +83,6 @@ Each microservice exposes `/metrics` endpoints to allow Prometheus to scrape dat
 - **Prometheus**
 - **SQLAlchemy**
 - **Python 3.10+**
-
----
-
-## 🧭 Future Plans
-- Containerize all services using **Docker**
-- Orchestrate using **Kubernetes**
-- Add **Grafana dashboards** for visual metrics
-- Implement an **API Gateway** for unified routing
 
 ---
 
