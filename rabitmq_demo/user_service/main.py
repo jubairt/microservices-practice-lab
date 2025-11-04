@@ -1,6 +1,6 @@
 import pika, json
 
-url = "amqps://tdipdrdy:p1qHp0Ac00d2ZuGtsGDabhItNyYtqDTF@beaver.rmq.cloudamqp.com/tdipdrdy"
+url = "create instance from cloudamqp and paste the id here"
 params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel()
