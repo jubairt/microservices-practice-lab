@@ -4,7 +4,7 @@ TOPIC_NAME = "orders"
 
 consumer = KafkaConsumer(
     TOPIC_NAME,
-    bootstrap_servers=f"kafka-20fad464-abdullahjubairt-9bfb.e.aivencloud.com:19397",
+    bootstrap_servers=f"paste id from aiven cloud.com",
     client_id = "CONSUMER_CLIENT_ID",
     group_id = "CONSUMER_GROUP_ID",
     security_protocol="SSL",
