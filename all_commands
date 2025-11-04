@@ -1,0 +1,20 @@
+## run prometheius
+.\prometheus.exe --config.file=prometheus.yml
+
+
+## run app from project
+uvicorn app.main:app --reload --port 8001
+
+## generate python code for prot files
+python -m grpc_tools.protoc "-I=protos" "--python_out=." "--grpc_python_out=." "protos/product.proto"
+
+python -m grpc_tools.protoc "-I=protos" "--python_out=." "--grpc_python_out=." "protos/user.proto"
+
+
+## Run grpc files
+python -m user_service.main
+
+## Run consul
+consul agent -dev
+http://localhost:8500
+

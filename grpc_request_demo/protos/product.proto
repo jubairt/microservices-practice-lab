@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service ProductService {
+  rpc GetProduct (ProductEmpty) returns (ProductResponse);
+
+}
+
+message ProductEmpty {}
+
+
+message ProductResponse {
+  string name = 1;
+}
